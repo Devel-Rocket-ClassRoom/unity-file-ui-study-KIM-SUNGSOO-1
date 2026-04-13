@@ -79,11 +79,34 @@ public class LocalizationText : MonoBehaviour
         var stringTable = DataTableManager.GetStringTable(lang);
         text.text = stringTable.Get(id);
     }
-
-    [ContextMenu("ChangeLanguage")]
-    private void ChangeLanguage()
+    private static void RefreshAllInEditor(Languages lang)
     {
+        var all = Object.FindObjectsByType<LocalizationText>(FindObjectsSortMode.None);
 
+        foreach (var loc in all)
+        {
+            loc.editorLang = lang;
+            loc.OnChangeLanguage(lang);
+        }
+    }
+
+    [ContextMenu("ChangeLanguageKr")]
+    private void ChangeLanguageKr()
+    {
+        Variables.Languages = Languages.Korean;
+        RefreshAllInEditor(Languages.Korean);
+    }
+    [ContextMenu("ChangeLanguageEn")]
+    private void ChangeLanguageEn()
+    {
+        Variables.Languages = Languages.English;
+        RefreshAllInEditor(Languages.English);
+    }
+    [ContextMenu("ChangeLanguageJp")]
+    private void ChangeLanguageJp()
+    {
+        Variables.Languages = Languages.Japanese;
+        RefreshAllInEditor(Languages.Japanese);
     }
 #endif
 }

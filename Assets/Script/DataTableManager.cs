@@ -38,8 +38,23 @@ public static class DataTableManager
 
     public static void ChangeLanguage(Languages lang)
     {
-        var stringTable = StringTable;
+        
+        if (tables.ContainsKey(DataTableIDs.StringTableIds[(int)lang]))
+            return;
+        string oldId = string.Empty;
+        foreach(var id in DataTableIDs.StringTableIds)
+        {
+            if(tables.ContainsKey(id))
+            {
+                oldId = id;
+                break;
+            }
+        }
+        
+        var stringTable = tables[oldId];
         stringTable.Load(DataTableIDs.StringTableIds[(int)lang]);
+        //tables.Remove(oldId);
+        //tables.Add(DataTableIDs.String, stringTable);
     }
 
     public static T Get<T>(string id) where T : DataTable

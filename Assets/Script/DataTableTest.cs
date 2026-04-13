@@ -6,6 +6,7 @@ public class DataTableTest : MonoBehaviour
     public string NameStringTableEn = "StringTableEn";
     public string NameStringTableJp = "StringTableJp";
 
+
     public void OnClickStringTableKr()
     {
         Debug.Log(DataTableManager.StringTable.Get("YOU DIE"));
