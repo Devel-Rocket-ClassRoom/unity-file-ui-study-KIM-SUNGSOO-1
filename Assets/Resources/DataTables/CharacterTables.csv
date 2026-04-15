@@ -1,0 +1,5 @@
+﻿Id,Type,Name,Desc,Attack,Defense,Health,Icon
+Character1,Warriar,Character1Name,Character1Desc,50,20,200,Icon_Helmet01
+Character2,Archer,Character2Name,Character2Desc,30,10,150,Icon_Bow02
+Character3,Warriar,Character3Name,Character3Desc,40,30,150,Icon_Helmet02
+Character4,Tanker,Character4Name,Character4Desc,10,100,300,Icon_Shield05

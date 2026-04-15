@@ -8,7 +8,7 @@ public class StringTable : DataTable
     {
         public string Id {  get; set; }
         public string String { get; set;}
-    }
+    }   
 
     private readonly Dictionary<string,string> table = new Dictionary<string, string>();
     public override void Load(string fileName)

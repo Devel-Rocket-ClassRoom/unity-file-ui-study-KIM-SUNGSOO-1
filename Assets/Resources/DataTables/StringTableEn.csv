@@ -1,7 +1,23 @@
 ﻿Id,String
-HELLO,HELLO
-BYE,BYE
-YOU DIE,YOU DIE
-YOU SAVE,YOU SAVE
-CALL,CALL
-WHY,WHY
+HELLO,Hello~
+BYE,Bye~
+YOU DIE,You Die...
+Item1Name,Sword
+Item2Name,Shield
+Item3Name,Bow
+Item4Name,Potion
+Item1Desc,This is a sword.
+Item2Desc,This is a shield.
+Item3Desc,This is a bow.
+Item4Desc,This is a potion.
+Character1Name,Adela
+Character2Name,BowKing
+Character3Name,Paladis
+Character4Name,Grogy
+Character1Desc,Warriar Adela
+Character2Desc,Archer Bowking
+Character3Desc,Warriar Paladis
+Character4Desc,Tanker Grogy
+Attack,Attack
+Defense,Defense
+Health,Health

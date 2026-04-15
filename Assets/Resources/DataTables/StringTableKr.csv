@@ -2,6 +2,24 @@
 HELLO,안녕
 BYE,잘가
 YOU DIE,너 죽음
-YOU SAVE,너 살았음
-CALL,호출
-WHY,왜?
+Item1Name,검
+Item2Name,방패
+Item3Name,활
+Item4Name,물약
+Item1Desc,이것은 검이다.
+Item2Desc,이것은 방패다.
+Item3Desc,이것은 활이다.
+Item4Desc,이것은 물약이다.
+Character1Name,아델레
+Character2Name,보우킹
+Character3Name,팔라디스
+Character4Name,그로기
+Character1Desc,전사 아델레
+Character2Desc,궁수 보우킹
+Character3Desc,전사 팔라디스
+Character4Desc,탱커 그로기
+Attack,공격력
+Defense,방어력
+Health,체력
+
+

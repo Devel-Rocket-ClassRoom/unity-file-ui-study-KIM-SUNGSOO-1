@@ -1,7 +1,23 @@
 ﻿Id,String
-HELLO,こんにちは
-BYE,さようなら
+HELLO,やあ
+BYE,じゃあな
 YOU DIE,あなたは死ぬ
-YOU SAVE, 生きている
-CALL,呼び出し
-WHY, なぜ？
+Item1Name,?
+Item2Name,盾
+Item3Name,弓
+Item4Name,ポ?ション
+Item1Desc,これは?だ。
+Item2Desc,これは盾だ。
+Item3Desc,これは弓だ。
+Item4Desc,これはポ?ションだ。
+Character1Name,아델레1
+Character2Name,보우킹1
+Character3Name,팔라디스1
+Character4Name,그로기1
+Charcter1Desc,전사 아델레1
+Charcter2Desc,궁수 보우킹1
+Charcter3Desc,전사 팔라디스1
+Charcter4Desc,탱커 그로기1
+Attack,공격력1
+Defense,방어력1
+Health,체력1
