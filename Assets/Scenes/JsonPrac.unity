@@ -566,7 +566,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168393217}
-  - {fileID: 1255722865}
   - {fileID: 1992965066}
   - {fileID: 1797182396}
   m_Father: {fileID: 0}
@@ -576,118 +575,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &627444734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 627444738}
-  - component: {fileID: 627444737}
-  - component: {fileID: 627444736}
-  - component: {fileID: 627444735}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &627444735
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627444734}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &627444736
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627444734}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &627444737
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627444734}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &627444738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 627444734}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &693808201
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +605,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JsonTest2
   flieName: test.json
-  cube: {fileID: 0}
+  cube: {fileID: 758396844330555390, guid: 254e26351dde0de498df1def318e9d6d, type: 3}
+  cubePrefab: {fileID: 758396844330555390, guid: 254e26351dde0de498df1def318e9d6d, type: 3}
+  spherePrefab: {fileID: 2614586402079889083, guid: e81dcd41854f305408b4eee61d4b44ed, type: 3}
+  capsulePrefab: {fileID: 2740219969465221483, guid: 878d9fc8702d45f458596a680a553b4b, type: 3}
+  cylinderPrefab: {fileID: 3412340763266709315, guid: 73d083f921325ad41aeb50428a1e74d4, type: 3}
+  minPos: {x: -5, y: 0.5, z: -5}
+  maxPos: {x: 5, y: 3, z: 5}
+  minScale: {x: 0.5, y: 0.5, z: 0.5}
+  maxScale: {x: 2, y: 2, z: 2}
+  minCreateCount: 1
+  maxCreateCount: 10
 --- !u!4 &693808203
 Transform:
   m_ObjectHideFlags: 0
@@ -1022,7 +919,6 @@ GameObject:
   - component: {fileID: 1168393221}
   - component: {fileID: 1168393220}
   - component: {fileID: 1168393219}
-  - component: {fileID: 1168393218}
   m_Layer: 5
   m_Name: Load
   m_TagString: Untagged
@@ -1043,6 +939,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 936069896}
+  - {fileID: 1255722865}
   m_Father: {fileID: 540689646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1050,20 +947,6 @@ RectTransform:
   m_AnchoredPosition: {x: 545, y: 487}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1168393218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168393216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b4df3064531404fbc25409dd4769df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JsonTest2
-  flieName: test.json
-  cube: {fileID: 627444734}
 --- !u!114 &1168393219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,7 +991,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1168393218}
+      - m_Target: {fileID: 693808202}
         m_TargetAssemblyTypeName: JsonTest2, Assembly-CSharp
         m_MethodName: Load
         m_Mode: 1
@@ -1170,7 +1053,6 @@ GameObject:
   - component: {fileID: 1255722869}
   - component: {fileID: 1255722868}
   - component: {fileID: 1255722867}
-  - component: {fileID: 1255722866}
   m_Layer: 5
   m_Name: Save
   m_TagString: Untagged
@@ -1185,33 +1067,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255722864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1601443484}
-  m_Father: {fileID: 540689646}
+  m_Father: {fileID: 1168393217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 811, y: 493}
+  m_AnchoredPosition: {x: 265.99988, y: 5.9999695}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1255722866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255722864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b4df3064531404fbc25409dd4769df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JsonTest2
-  flieName: test.json
-  cube: {fileID: 627444734}
 --- !u!114 &1255722867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,7 +1124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1255722866}
+      - m_Target: {fileID: 693808202}
         m_TargetAssemblyTypeName: JsonTest2, Assembly-CSharp
         m_MethodName: Save
         m_Mode: 1
@@ -1455,7 +1323,6 @@ GameObject:
   - component: {fileID: 1797182400}
   - component: {fileID: 1797182399}
   - component: {fileID: 1797182398}
-  - component: {fileID: 1797182397}
   m_Layer: 5
   m_Name: Clear
   m_TagString: Untagged
@@ -1483,20 +1350,6 @@ RectTransform:
   m_AnchoredPosition: {x: 811, y: 374.00003}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1797182397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797182395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b4df3064531404fbc25409dd4769df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JsonTest2
-  flieName: test.json
-  cube: {fileID: 627444734}
 --- !u!114 &1797182398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,9 +1394,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1797182397}
+      - m_Target: {fileID: 693808202}
         m_TargetAssemblyTypeName: JsonTest2, Assembly-CSharp
-        m_MethodName: Save
+        m_MethodName: Clear
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1603,7 +1456,6 @@ GameObject:
   - component: {fileID: 1992965070}
   - component: {fileID: 1992965069}
   - component: {fileID: 1992965068}
-  - component: {fileID: 1992965067}
   m_Layer: 5
   m_Name: Create
   m_TagString: Untagged
@@ -1631,20 +1483,6 @@ RectTransform:
   m_AnchoredPosition: {x: 545, y: 374}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1992965067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992965065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23b4df3064531404fbc25409dd4769df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JsonTest2
-  flieName: test.json
-  cube: {fileID: 627444734}
 --- !u!114 &1992965068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,9 +1527,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1992965067}
+      - m_Target: {fileID: 693808202}
         m_TargetAssemblyTypeName: JsonTest2, Assembly-CSharp
-        m_MethodName: Save
+        m_MethodName: Create
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1966,4 +1804,3 @@ SceneRoots:
   - {fileID: 693808203}
   - {fileID: 540689646}
   - {fileID: 2041617362}
-  - {fileID: 627444738}
