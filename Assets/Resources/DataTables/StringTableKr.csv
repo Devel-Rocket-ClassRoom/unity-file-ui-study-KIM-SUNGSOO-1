@@ -21,5 +21,28 @@ Character4Desc,탱커 그로기
 Attack,공격력
 Defense,방어력
 Health,체력
+NAME,이름:
+DESC,설명:
+ATTACKP,공격력:
+DEFENSEP,방어력:
+HEALTHP,체력:
+TYPE,타입
+VALUE,밸류
+COST,코스트
+WEAPON,무기
+EQUIP,장비
+CONSUMABLE,소모품
+UNCONSUMABLE,비소모품
+LOAD,불러오기
+SAVE,저장
+CREATE,아이템 생성
+REMOVE,아이템 제거
+NONE,없음
+CREATIONTIMEASCENDING,획득날짜 (오름차순)
+CREATIONTIMEDESCENDING,획득날짜 (내림차순)
+NAMEASCENDING,이름 (오름차순)
+NAMEDESCENDING,이름 (내림차순)
+COSTASCENDING,가격 (오름차순)
+COSTDESCENDING,가격 (내림차순)
 
 

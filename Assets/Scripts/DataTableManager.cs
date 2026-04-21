@@ -11,6 +11,8 @@ public static class DataTableManager
 
     public static ItemTable ItemTable => Get<ItemTable>(DataTableIds.Item);
 
+    public static CharacterTable CharacterTable => Get<CharacterTable>(DataTableIds.Character);
+
 #if UNITY_EDITOR
     public static StringTable GetStringTable(Languages lang)
     {
@@ -38,6 +40,9 @@ public static class DataTableManager
         }
 #endif
 
+        var characterTable = new CharacterTable();
+        characterTable.Load(DataTableIds.Character);
+        tables.Add(DataTableIds.Character, characterTable);
         var itemTable = new ItemTable();
         itemTable.Load(DataTableIds.Item);
         tables.Add(DataTableIds.Item, itemTable);
@@ -73,4 +78,19 @@ public static class DataTableManager
         }
         return tables[id] as T;
     }
+    public static string GetString(string key)
+    {
+        if (string.IsNullOrEmpty(key))
+            return string.Empty;
+
+        if (StringTable == null)
+        {
+            Debug.LogError("StringTable is null");
+            return key;
+        }
+
+        return StringTable.GetString(key);
+    }
+
+
 }

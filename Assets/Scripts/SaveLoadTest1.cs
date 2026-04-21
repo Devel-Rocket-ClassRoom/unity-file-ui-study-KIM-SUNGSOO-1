@@ -6,13 +6,10 @@ public class SaveLoadTest1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SaveLoadManager.Data = new SaveDataV3();
+            SaveLoadManager.Data = new SaveDataV4();
             SaveLoadManager.Data.Name = "TEST1234";
             SaveLoadManager.Data.Gold = 4321;
-            SaveLoadManager.Data.ItemList.Add("Item1");
-            SaveLoadManager.Data.ItemList.Add("Item2");
-            SaveLoadManager.Data.ItemList.Add("Item3");
-            SaveLoadManager.Data.ItemList.Add("Item4");
+            
             SaveLoadManager.Save();
         }
 
@@ -23,9 +20,12 @@ public class SaveLoadTest1 : MonoBehaviour
                 Debug.Log(SaveLoadManager.Data.Name);
                 Debug.Log(SaveLoadManager.Data.Gold);
 
-                foreach (var itemId in SaveLoadManager.Data.ItemList)
+                foreach (var saveItemData in SaveLoadManager.Data.ItemList)
                 {
-                    Debug.Log(DataTableManager.ItemTable.Get(itemId).Name);
+                    Debug.Log(saveItemData.instanceId);
+                    Debug.Log(saveItemData.itemData.Name);
+                    Debug.Log(saveItemData.CreationTime);
+
                 }
             }
             else

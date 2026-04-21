@@ -21,3 +21,26 @@ Charcter4Desc,탱커 그로기1
 Attack,공격력1
 Defense,방어력1
 Health,체력1
+NAME,이름1
+DESC,설명1
+ATTACKP,공격력1:
+DEFENSEP,방어력1:
+HEALTHP,체력1:
+TYPE,타입1
+VALUE,밸류1
+COST,코스트1
+WEAPON,무기1
+EQUIP,장비1
+CONSUMABLE,소모품1
+UNCONSUMABLE,비소모품1
+LOAD,불러오기1
+SAVE,저장1
+CREATE,아이템 생성1
+REMOVE,아이템 제거1
+NONE,없음1
+CREATIONTIMEASCENDING,획득날짜 (오름차순)1
+CREATIONTIMEDESCENDING,획득날짜 (내림차순)1
+NAMEASCENDING,이름 (오름차순)1
+NAMEDESCENDING,이름 (내림차순)1
+COSTASCENDING,가격 (오름차순)1
+COSTDESCENDING,가격 (내림차순)1

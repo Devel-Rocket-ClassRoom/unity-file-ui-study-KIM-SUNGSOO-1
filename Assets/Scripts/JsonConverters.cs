@@ -1,7 +1,21 @@
 using UnityEngine;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
+using Newtonsoft.Json.Linq;
+
+public class ItemDataConverter : JsonConverter<ItemData>
+{
+    public override ItemData ReadJson(JsonReader reader, Type objectType, ItemData existingValue, bool hasExistingValue, JsonSerializer serializer)
+    {
+        var id = reader.Value as string;
+        return DataTableManager.ItemTable.Get(id);
+    }
+
+    public override void WriteJson(JsonWriter writer, ItemData value, JsonSerializer serializer)
+    {
+        writer.WriteValue(value.Id);
+    }
+}
 
 public class Vector3Converter : JsonConverter<Vector3>
 {
@@ -60,7 +74,7 @@ public class ColorConverter : JsonConverter<Color>
 {
     public override Color ReadJson(JsonReader reader, Type objectType, Color existingValue, bool hasExistingValue, JsonSerializer serializer)
     {
-        Color c = Color.clear;
+        Color c = Color.black;
         JObject jObj = JObject.Load(reader);
         c.r = (float)jObj["R"];
         c.g = (float)jObj["G"];
@@ -83,4 +97,3 @@ public class ColorConverter : JsonConverter<Color>
         writer.WriteEndObject();
     }
 }
-

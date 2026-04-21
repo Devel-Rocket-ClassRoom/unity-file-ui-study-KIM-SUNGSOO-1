@@ -15,6 +15,13 @@ public enum ItemTypes
     Consumable,
 }
 
+public enum CharacterTypes
+{
+    Warriar,
+    Archer,
+    Tanker,
+    
+}
 public static class Variables
 {
     public static event System.Action OnLanguageChanged;
@@ -51,4 +58,6 @@ public static class DataTableIds
     public static string String => StringTableIds[(int)Variables.Language];
 
     public static readonly string Item = "ItemTable";
+
+    public static readonly string Character = "CharacterTables";
 }

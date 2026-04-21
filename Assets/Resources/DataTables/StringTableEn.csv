@@ -21,3 +21,26 @@ Character4Desc,Tanker Grogy
 Attack,Attack
 Defense,Defense
 Health,Health
+NAME,Name
+DESC,Desc
+ATTACKP,AttackP:
+DEFENSEP,DefenseP:
+HEALTHP,HealthP:
+TYPE,Type
+VALUE,Value
+COST,Cost
+WEAPON,Weapon
+EQUIP,Equip
+CONSUMABLE,Consumable
+UNCONSUMABLE,unconsumable
+LOAD,Load
+SAVE,Save
+CREATE,Create
+REMOVE,Remove
+NONE,None
+CREATIONTIMEASCENDING,CreationTimeAscending
+CREATIONTIMEDESCENDING,CreationTimeDecsending
+NAMEASCENDING,NameAscending
+NAMEDECSENDING,NameDescending
+COSTASCENDING, CostAscending
+COSTDESCENDING, CostDescending

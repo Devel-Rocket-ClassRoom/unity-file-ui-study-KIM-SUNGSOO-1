@@ -41,4 +41,12 @@ public class StringTable : DataTable
         }
         return table[key];
     }
+    public string GetString(string key)
+    {
+        if (table.TryGetValue(key, out var value))
+            return value;
+
+        Debug.LogWarning($"문자열 키 없음: {key}");
+        return key;
+    }
 }
